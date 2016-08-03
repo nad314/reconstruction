@@ -3,6 +3,7 @@
 #include <core-forms>
 using namespace core::opengl;
 
-#include <mainWindow/MainWindow.h>
-#include <program/program.h>
+#include <renderWindow\RenderWindow.h>
+#include <mainWindow\MainWindow.h>
+#include <program\program.h>
 
