@@ -1,6 +1,6 @@
 #pragma once
 
-class RenderWindow : public core::Window {
+class RenderWindow final : public core::Window {
 public:
 	void onOpening() override;
 	void onOpened() override;

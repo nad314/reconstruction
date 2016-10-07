@@ -1,6 +1,7 @@
 #include <main/main.h>
 
 int Program::onLoad() {
+	core::Theme::formActiveBorderColor = Color(236, 226, 198, 255);
 	return 0;
 }
 
