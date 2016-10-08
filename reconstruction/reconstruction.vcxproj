@@ -75,7 +75,7 @@
     <LibraryPath>D:\code\clib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(SolutionDir)\build\</OutDir>
+    <OutDir>$(SolutionDir)\build\bin\</OutDir>
     <IntDir>$(SolutionDir)\bin\</IntDir>
     <IncludePath>D:\code\core-game\core-game;D:\code\core-forms\core-forms;D:\code\core\core;D:\code\reconstruction\reconstruction;$(IncludePath)</IncludePath>
     <LibraryPath>D:\code\clib;$(LibraryPath)</LibraryPath>
@@ -128,8 +128,10 @@
     <ClInclude Include="controller\controller.h" />
     <ClInclude Include="mainWindow\MainWindow.h" />
     <ClInclude Include="main\main.h" />
+    <ClInclude Include="modelLoader\modelLoader.h" />
     <ClInclude Include="program\program.h" />
     <ClInclude Include="renderWindow\RenderWindow.h" />
+    <ClInclude Include="statusbar\statusbar.h" />
     <ClInclude Include="storage\storage.h" />
     <ClInclude Include="theme\theme.h" />
   </ItemGroup>
@@ -138,8 +140,10 @@
     <ClCompile Include="controller\controller.events.cpp" />
     <ClCompile Include="mainWindow\MainWindow.cpp" />
     <ClCompile Include="main\main.cpp" />
+    <ClCompile Include="modelLoader\modelLoader.cpp" />
     <ClCompile Include="program\program.cpp" />
     <ClCompile Include="renderWindow\RenderWindow.cpp" />
+    <ClCompile Include="statusbar\statusbar.cpp" />
     <ClCompile Include="storage\storage.cpp" />
     <ClCompile Include="theme\theme.cpp" />
   </ItemGroup>

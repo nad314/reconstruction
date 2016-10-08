@@ -36,6 +36,12 @@
     <ClInclude Include="controller\controller.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="modelLoader\modelLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="statusbar\statusbar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main\main.cpp">
@@ -60,6 +66,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="controller\controller.events.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="modelLoader\modelLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="statusbar\statusbar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
