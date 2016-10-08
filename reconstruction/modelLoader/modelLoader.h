@@ -3,6 +3,6 @@
 class ModelLoader {
 private:
 public:
-	static bool loadPLYBin(core::buffer<vec3>& vecs);
+	static bool loadPLYBin(const char* path, core::buffer<vec3>& vecs);
 };
 

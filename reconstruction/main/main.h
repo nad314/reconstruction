@@ -6,6 +6,8 @@ using namespace core::opengl;
 using namespace coreTypes;
 #include <thread>
 #include <mutex>
+#include <fstream>
+#include <string>
 
 //stuff that belongs to engine
 #include <modelLoader/modelLoader.h>

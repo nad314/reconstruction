@@ -1,5 +1,5 @@
 #pragma once
 
-class Storage {
-
+struct Storage {
+	Storage();
 };
