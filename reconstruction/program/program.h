@@ -3,6 +3,8 @@
 class Program final : public core::Module, public core::SIMD {
 protected:
 	MainWindow wnd;
+	Storage* lpData;
+	Controller* controller;
 public:
 	int onLoad() override;
 	int onDispose() override;

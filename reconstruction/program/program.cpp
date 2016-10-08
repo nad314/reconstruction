@@ -12,10 +12,14 @@ int Program::onDispose() {
 int Program::onStart() {
 	if (!wnd.open())
 		return 1;
+	lpData = new Storage;
+	controller = new Controller(wnd.renderWindow, *lpData);
 	return 0;
 }
 
 int Program::onStop() {
+	delete controller;
+	delete lpData;
 	wnd.close();
 	return 0;
 }
@@ -23,8 +27,9 @@ int Program::onStop() {
 int Program::main() {
 	bool done(0);
 	while (!done) {
-		if (wnd.peekMessage(done))
+		if (wnd.peekMessageAsync(done))
 			continue;
+		controller->drawScene();
 		Sleep(1);
 	}
 	return 0;

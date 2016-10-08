@@ -125,16 +125,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="controller\controller.h" />
     <ClInclude Include="mainWindow\MainWindow.h" />
     <ClInclude Include="main\main.h" />
     <ClInclude Include="program\program.h" />
     <ClInclude Include="renderWindow\RenderWindow.h" />
+    <ClInclude Include="storage\storage.h" />
+    <ClInclude Include="theme\theme.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="controller\controller.cpp" />
+    <ClCompile Include="controller\controller.events.cpp" />
     <ClCompile Include="mainWindow\MainWindow.cpp" />
     <ClCompile Include="main\main.cpp" />
     <ClCompile Include="program\program.cpp" />
     <ClCompile Include="renderWindow\RenderWindow.cpp" />
+    <ClCompile Include="storage\storage.cpp" />
+    <ClCompile Include="theme\theme.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
