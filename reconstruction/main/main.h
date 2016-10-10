@@ -10,6 +10,8 @@ using namespace coreTypes;
 #include <string>
 
 //stuff that belongs to engine
+#include <pointCloud/pointCloud.h>
+#include <pointCloud/glPointCloud.h>
 #include <modelLoader/modelLoader.h>
 
 #include <theme/theme.h>

@@ -42,6 +42,12 @@
     <ClInclude Include="statusbar\statusbar.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="pointCloud\pointCloud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pointCloud\glPointCloud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main\main.cpp">
@@ -72,6 +78,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="statusbar\statusbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pointCloud\glPointCloud.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

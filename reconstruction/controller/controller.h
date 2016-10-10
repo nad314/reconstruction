@@ -5,6 +5,8 @@ private:
 	core::Window* parent;
 	Storage* lpData;
 	bool valid;
+
+	core::glView view;
 public:
 	Controller(core::Window& wnd, Storage& data);
 	~Controller();

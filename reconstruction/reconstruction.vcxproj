@@ -129,6 +129,8 @@
     <ClInclude Include="mainWindow\MainWindow.h" />
     <ClInclude Include="main\main.h" />
     <ClInclude Include="modelLoader\modelLoader.h" />
+    <ClInclude Include="pointCloud\glPointCloud.h" />
+    <ClInclude Include="pointCloud\pointCloud.h" />
     <ClInclude Include="program\program.h" />
     <ClInclude Include="renderWindow\RenderWindow.h" />
     <ClInclude Include="statusbar\statusbar.h" />
@@ -141,6 +143,7 @@
     <ClCompile Include="mainWindow\MainWindow.cpp" />
     <ClCompile Include="main\main.cpp" />
     <ClCompile Include="modelLoader\modelLoader.cpp" />
+    <ClCompile Include="pointCloud\glPointCloud.cpp" />
     <ClCompile Include="program\program.cpp" />
     <ClCompile Include="renderWindow\RenderWindow.cpp" />
     <ClCompile Include="statusbar\statusbar.cpp" />

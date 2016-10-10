@@ -7,6 +7,10 @@ Controller::Controller(core::Window& wnd, Storage& data) {
 	lpData = &data;
 	valid = 0;
 	wnd.attach(this);
+
+	view.perspective(*parent, 45.0f, 0.1f, 100.0f);
+	view.modelview.init();
+	view.projection.init();
 }
 
 Controller::~Controller() {

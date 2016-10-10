@@ -12,6 +12,7 @@ int Program::onDispose() {
 int Program::onStart() {
 	if (!wnd.open())
 		return 1;
+	glExt::init();
 	lpData = new Storage;
 	controller = new Controller(wnd.renderWindow, *lpData);
 	return 0;
