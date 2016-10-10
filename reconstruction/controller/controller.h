@@ -7,6 +7,10 @@ private:
 	bool valid;
 
 	core::glView view;
+	core::matrixf rotation;
+	core::matrixf translation;
+	uint loc[2];
+
 public:
 	Controller(core::Window& wnd, Storage& data);
 	~Controller();
@@ -16,4 +20,5 @@ public:
 	void drawScene();
 
 	int onResize(const core::eventInfo& e) override;
+	Controller& updateViewMatrix();
 };

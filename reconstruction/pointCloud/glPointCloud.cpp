@@ -1,6 +1,13 @@
 #include <main/main.h>
 
 namespace core {
+
+	glPointCloud::glPointCloud() {
+		vao = 0;
+		memset(buffer, 0, sizeof(uint)*nbuf);
+		count = 0;
+	}
+
 	glPointCloud& glPointCloud::dispose() {
 		if (glExt::isVertexArray(vao))
 			glExt::deleteVertexArrays(1, &vao);
@@ -16,10 +23,10 @@ namespace core {
 		dispose();
 		try {
 			glExt::genBuffers(nbuf, buffer);
-			if (!glExt::isBuffer(buffer[0]))
+			if (!buffer[0])
 				throw 1;
 			glExt::genVertexArrays(1, &vao);
-			if (!glExt::isVertexArray(vao))
+			if (!vao)
 				throw 2;
 
 			glExt::bindVertexArray(0);

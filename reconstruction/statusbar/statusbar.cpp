@@ -15,7 +15,6 @@ void Statusbar::onOpened() {
 	Form::onOpened();
 	setBackColor(Theme::FormBackColor);
 	push(progBar.make(vec4i(0, 0, 200, 20), *this));
-	progBar.set(0.5f);
 	setControlColors();
 	progBar.setColor(core::Theme::formActiveBorderColor);
 }

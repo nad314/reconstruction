@@ -10,6 +10,7 @@ namespace core {
 		
 	public:
 		glPointCloud& dispose();
+		glPointCloud();
 		~glPointCloud() { dispose(); }
 		bool make(pointCloud& cloud);
 		bool attach(glShader& shader, const char* vname);
