@@ -7,5 +7,8 @@ Storage::Storage() {
 	core::Path::cd("../data/");
 	if (!ModelLoader::loadPLYBin("MP-jarbol.ply", vecs))
 		printf("Couldn't load PLY file\n");
+	else {
+		core::Debug::print("Loaded %d vertices\n", vecs.count());
+	}
 	core::Path::popDir();
 }
