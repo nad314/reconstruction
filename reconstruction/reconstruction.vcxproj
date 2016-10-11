@@ -140,6 +140,7 @@
   <ItemGroup>
     <ClCompile Include="controller\controller.cpp" />
     <ClCompile Include="controller\controller.events.cpp" />
+    <ClCompile Include="controller\controller.transform.cpp" />
     <ClCompile Include="mainWindow\MainWindow.cpp" />
     <ClCompile Include="main\main.cpp" />
     <ClCompile Include="modelLoader\modelLoader.cpp" />

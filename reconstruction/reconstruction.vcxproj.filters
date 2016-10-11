@@ -83,6 +83,9 @@
     <ClCompile Include="pointCloud\glPointCloud.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="controller\controller.transform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

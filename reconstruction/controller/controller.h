@@ -17,8 +17,12 @@ public:
 
 	inline void invalidate() { valid = 0; }
 	inline Storage& storage() { return *lpData; };
-	void drawScene();
+	Controller& drawScene();
 
 	int onResize(const core::eventInfo& e) override;
+	int onMouseMove(const core::eventInfo& e) override;
+	int onLButtonDown(const core::eventInfo& e) override;
+	int onLButtonUp(const core::eventInfo& e) override;
 	Controller& updateViewMatrix();
+	Controller& initGL();
 };
