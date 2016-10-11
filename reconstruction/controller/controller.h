@@ -9,7 +9,17 @@ private:
 	core::glView view;
 	core::matrixf rotation;
 	core::matrixf translation;
+	core::matrixf zoom;
 	uint loc[2];
+
+	struct Mouse {
+		int state; //state for transformations
+		vec2i p;
+		vec2i lp;
+		inline const int dx() const { return p.x - lp.x; }
+		inline const int dy() const { return p.y - lp.y; }
+	} mouse;
+
 
 public:
 	Controller(core::Window& wnd, Storage& data);
@@ -23,6 +33,9 @@ public:
 	int onMouseMove(const core::eventInfo& e) override;
 	int onLButtonDown(const core::eventInfo& e) override;
 	int onLButtonUp(const core::eventInfo& e) override;
+	int onRButtonDown(const core::eventInfo& e) override;
+	int onRButtonUp(const core::eventInfo& e) override;
 	Controller& updateViewMatrix();
 	Controller& initGL();
+	Controller& initTransform();
 };

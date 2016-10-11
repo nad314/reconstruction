@@ -10,10 +10,7 @@ Controller::Controller(core::Window& wnd, Storage& data) {
 
 	view.perspective(*parent, 45.0f, 0.1f, 100.0f);
 	view.modelview.init();
-	rotation.init();
-	translation.init();
-	translation.translate(0.0f, 0.0f, -50.0f);
-	updateViewMatrix();
+	initTransform().updateViewMatrix();
 
 	glGetError();
 	loc[0] = glExt::getUniformLocation(lpData->shader, "modelview");
@@ -22,6 +19,7 @@ Controller::Controller(core::Window& wnd, Storage& data) {
 		core::Debug::log("Error: couldn't get shader matrix uniform locations\n");
 
 	initGL();
+	mouse.state = 0;
 }
 
 Controller::~Controller() {
