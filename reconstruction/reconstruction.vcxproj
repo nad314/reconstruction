@@ -126,6 +126,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="controller\controller.h" />
+    <ClInclude Include="mainMenu\mainMenu.h" />
     <ClInclude Include="mainWindow\MainWindow.h" />
     <ClInclude Include="main\main.h" />
     <ClInclude Include="modelLoader\modelLoader.h" />
@@ -141,6 +142,7 @@
     <ClCompile Include="controller\controller.cpp" />
     <ClCompile Include="controller\controller.events.cpp" />
     <ClCompile Include="controller\controller.transform.cpp" />
+    <ClCompile Include="mainMenu\mainMenu.cpp" />
     <ClCompile Include="mainWindow\MainWindow.cpp" />
     <ClCompile Include="main\main.cpp" />
     <ClCompile Include="modelLoader\modelLoader.cpp" />

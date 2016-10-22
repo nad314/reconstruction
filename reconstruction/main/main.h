@@ -18,6 +18,7 @@ using namespace coreTypes;
 
 #include <statusbar/statusbar.h>
 #include <renderWindow/RenderWindow.h>
+#include <mainMenu/mainMenu.h>
 #include <mainWindow/MainWindow.h>
 
 #include <storage/storage.h>
